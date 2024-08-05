@@ -6,7 +6,7 @@ const PinnedRepositories = () => {
     {
       name: 'Travium',
       link: 'https://github.com/Zemorath/Travium',
-      description: 'A travel management application.'
+      description: 'A subscription management application.'
     },
     {
       name: 'Library Database',
@@ -20,7 +20,7 @@ const PinnedRepositories = () => {
       <h2>Pinned Repositories</h2>
       <div className="repositories-list">
         {repositories.map((repo, index) => (
-          <div key={index} className="repository">
+          <div key={index} className="repository-card">
             <h3><a href={repo.link}>{repo.name}</a></h3>
             <p>{repo.description}</p>
           </div>

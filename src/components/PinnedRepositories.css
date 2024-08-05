@@ -1,5 +1,41 @@
-.pinned-repositories .repository {
-    display: flex;
-    flex-direction: column;
-  }
-  
+.pinned-repositories {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.repositories-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.repository-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.repository-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.repository-card p {
+  margin: 10px 0 0;
+  font-size: 16px;
+}
+
+.repository-card a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.repository-card a:hover {
+  text-decoration: underline;
+}

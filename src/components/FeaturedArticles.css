@@ -1,16 +1,40 @@
-.featured-articles .article {
-    display: flex;
-    align-items: center;
-  }
-  
-  .article-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-  }
-  
-  .article-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
+.featured-articles {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.article {
+  text-align: left;
+}
+
+.article-content {
+  margin: 0;
+}
+
+.article-date {
+  margin: 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.article-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.article-title a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.article-title a:hover {
+  text-decoration: underline;
+}
