@@ -6,7 +6,7 @@ body {
 }
 
 a {
-  color: #1e90ff;
+  color: rgb(72, 195, 204);
   text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ a:hover {
   gap: 20px;
 }
 
-.article, .repository {
+.repository {
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;

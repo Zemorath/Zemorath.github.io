@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="home">
       <section className="intro">
-        <h1>Welcome to Trent Ward's Personal Website</h1>
+        <h1>Hi! I'm Trent Ward</h1>
         <p>Explore my projects, read my articles, and learn more about me.</p>
       </section>
       <FeaturedArticles />

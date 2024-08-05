@@ -7,22 +7,23 @@ const FeaturedArticles = () => {
       title: 'Understanding React Hooks',
       link: 'https://dev.to/zemorath/understanding-react-hooks',
       date: 'January 1, 2024',
-      description: 'A deep dive into React Hooks and how to use them effectively.'
+      logo: '/react-logo.png'
     },
     {
       title: 'Getting Started with Node.js',
       link: 'https://dev.to/zemorath/getting-started-with-nodejs',
       date: 'February 10, 2024',
-      description: 'A beginner’s guide to building applications with Node.js.'
+      logo: '/node-js-logo.png'
     }
   ];
 
   return (
-    <div className="featured-articles">
+    <>
       <h2>Featured Articles</h2>
       <div className="articles-list">
         {articles.map((article, index) => (
           <div key={index} className="article">
+            <img src={article.logo} alt={`${article.title} logo`} className="article-logo" />
             <div className="article-content">
               <p className="article-date">{article.date}</p>
               <h3 className="article-title"><a href={article.link}>{article.title}</a></h3>
@@ -30,7 +31,7 @@ const FeaturedArticles = () => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
