@@ -17,7 +17,7 @@ const About = () => {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
       >
-        I'm a Junior Software Developer with a passion for building tools that empower people. With a background in Theology and Software Engineering from Flatiron School, I blend analytical thinking with creative problem-solving. When I’m not coding, you’ll find me exploring philosophy, managing book collections, or helping others navigate the digital world.
+        I'm a Junior Software Developer with a passion for building tools that empower people. With a background in Theology and Software Engineering from Flatiron School, I blend analytical thinking with creative problem-solving. When I’m not coding, you’ll find me reading fantasy and philosophy, playing video games, and scheming of ways to make my players suffer, I mean enjoy, a Dungeons and Dragons campaign.
       </motion.p>
     </section>
   );
