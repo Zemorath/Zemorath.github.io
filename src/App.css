@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    scroll-behavior: smooth;
+  }
+  
+  .app {
+    overflow-x: hidden;
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1, h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #26a69a;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff6f61;
+  }

@@ -1,21 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <motion.nav
+      className="navbar"
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <Link to="/" className="nav-logo">Trent Ward</Link>
-      <div className="nav-links-container">
-        <div className="nav-links">
-          <Link to="/projects">Projects</Link>
-          <Link to="/articles">Articles</Link>
-          <Link to="/about">About Me</Link>
-        </div>
+      <div className="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
 export default Navbar;
-

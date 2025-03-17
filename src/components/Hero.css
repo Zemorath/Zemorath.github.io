@@ -1,0 +1,19 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a1a, #263238);
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    color: #26a69a;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    color: #ffffff;
+  }

@@ -1,0 +1,27 @@
+.projects {
+    background: #263238;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card h3 {
+    color: #26a69a;
+  }
+  
+  .tech {
+    font-family: 'Fira Code', monospace;
+    color: #ff6f61;
+    font-size: 14px;
+  }

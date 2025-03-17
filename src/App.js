@@ -1,23 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Projects from './components/Projects';
-import Articles from './components/Articles';
+import Hero from './components/Hero';
 import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
 import Contact from './components/Contact';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <div className="app">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
         <Contact />
       </div>
     </Router>

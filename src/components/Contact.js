@@ -1,24 +1,46 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin, FaDev } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
   return (
-    <div className="contact">
-      <h2>Contact Me</h2>
+    <section id="contact" className="contact">
+      <motion.h2
+        initial={{ x: -100 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Contact Me
+      </motion.h2>
       <div className="contact-links">
-        <a href="https://github.com/Zemorath" target="_blank" rel="noopener noreferrer">
-          <img src="/github-logo.png" alt="GitHub" className="contact-logo" />
-        </a>
-        <a href="https://www.linkedin.com/in/trentward100/" target="_blank" rel="noopener noreferrer">
-          <img src="/linkedin-logo.png" alt="LinkedIn" className="contact-logo" />
-        </a>
-        <a href="https://dev.to/zemorath" target="_blank" rel="noopener noreferrer">
-          <img src="/devto-logo.png" alt="Dev.to" className="contact-logo" />
-        </a>
+        <motion.a
+          href="https://github.com/Zemorath"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.2 }}
+        >
+          <FaGithub size={40} />
+        </motion.a>
+        <motion.a
+          href="https://www.linkedin.com/in/trentward100/"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.2 }}
+        >
+          <FaLinkedin size={40} />
+        </motion.a>
+        <motion.a
+          href="https://dev.to/zemorath"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.2 }}
+        >
+          <FaDev size={40} />
+        </motion.a>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default Contact;
-
