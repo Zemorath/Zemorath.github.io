@@ -97,42 +97,13 @@ export function Hero() {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleResumeDownload = async () => {
-    try {
-      const resumeUrl = `${window.location.origin}/resume.pdf`;
-      console.log('Attempting to download from:', resumeUrl);
-      
-      // First, check if the file exists
-      const response = await fetch(resumeUrl, { method: 'HEAD' });
-      console.log('File check response:', response.status, response.statusText);
-      
-      if (!response.ok) {
-        console.error('Resume file not found');
-        alert('Resume file is currently unavailable. Please try again later.');
-        return;
-      }
-
-      // If file exists, proceed with download
-      const link = document.createElement('a');
-      link.href = resumeUrl;
-      link.download = 'Trent_Ward_Resume.pdf';
-      link.target = '_blank'; // Open in new tab as fallback
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      console.log('Download initiated successfully');
-    } catch (error) {
-      console.error('Error downloading resume:', error);
-      // Fallback: try to open in new tab
-      console.log('Using fallback method');
-      const fallbackLink = document.createElement('a');
-      fallbackLink.href = '/resume.pdf';
-      fallbackLink.target = '_blank';
-      fallbackLink.rel = 'noopener noreferrer';
-      document.body.appendChild(fallbackLink);
-      fallbackLink.click();
-      document.body.removeChild(fallbackLink);
-    }
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/resume.pdf';
+    link.download = 'Trent_Ward_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (

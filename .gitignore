@@ -73,7 +73,7 @@ rollup.config.js
 
 # Gatsby files
 .cache/
-public
+# Note: Removed 'public' from gitignore as Vite uses public/ for static assets
 
 # Storybook build outputs
 .out
