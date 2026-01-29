@@ -97,6 +97,16 @@ export function Hero() {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleResumeDownload = () => {
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Path to your resume file in the public folder
+    link.download = 'Trent_Ward_Resume.pdf'; // Name for the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Particle Canvas */}
@@ -155,7 +165,7 @@ export function Hero() {
             LinkedIn
           </motion.a>
           <motion.button
-            onClick={() => alert('Resume download coming soon!')}
+            onClick={handleResumeDownload}
             className="flex items-center gap-2 px-6 py-3 bg-[#2dd4bf] text-[#0f0f0f] rounded-lg font-medium hover:bg-[#14b8a6] transition-all btn-shine"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
