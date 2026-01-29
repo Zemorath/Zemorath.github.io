@@ -44,7 +44,7 @@ export function About() {
             <div className="grid grid-cols-3 gap-4 pt-4">
               {[
                 { value: '3+', label: 'Years Coding' },
-                { value: '10+', label: 'Projects' },
+                { value: '40+', label: 'Projects' },
                 { value: '5+', label: 'Technologies' },
               ].map((stat, index) => (
                 <motion.div
