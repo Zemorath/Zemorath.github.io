@@ -32,7 +32,7 @@ const experiences: ExperienceItem[] = [
     title: 'Licensed Sales Representative',
     company: 'Allstate',
     location: 'Denver, CO',
-    period: 'Jul 2020 - Jul 2021',
+    period: 'Jul 2020 - Mar 2021',
     description: 'Tracked clients and communicated technical info to non-technical audiences. Developed ability to explain complex concepts simply.',
     skills: ['Sales', 'Client Management', 'Technical Communication'],
   },
