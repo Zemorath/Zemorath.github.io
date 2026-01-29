@@ -1,0 +1,15 @@
+# Handle line endings automatically
+* text=auto
+
+# Binary files - do not modify
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.otf binary
